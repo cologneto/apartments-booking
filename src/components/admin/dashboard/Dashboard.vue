@@ -1,10 +1,10 @@
 <template>
-    <h1>This is Home component</h1>
+    <h1>This is Admin dashboard</h1>
 </template>
 
 <script>
     export default {
-        name: "Home",
+        name: "Dashboard"
     }
 </script>
 

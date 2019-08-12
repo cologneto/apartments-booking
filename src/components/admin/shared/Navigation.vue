@@ -31,7 +31,7 @@
 
         <v-list class="pt-0" dense>
             <v-divider></v-divider>
-                    <router-link :to="'/' + item.title.toLowerCase()"
+                    <router-link :to="'/admin/' + item.title.toLowerCase()"
                                  tag="v-list-tile"
                                  v-for="item in items"
                                  :key="item.title"
