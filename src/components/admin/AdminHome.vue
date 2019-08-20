@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ab-navigation></ab-navigation>
+        <app-navigation></app-navigation>
         <router-view></router-view>
     </div>
 
@@ -12,7 +12,7 @@
     export default {
         name: "AdminHome",
         components: {
-            abNavigation: Navigation
+            appNavigation: Navigation
         }
     }
 </script>

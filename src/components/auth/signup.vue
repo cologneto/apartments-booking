@@ -71,11 +71,19 @@
         },
         methods: {
             onSignUp () {
-                // Vuex
-                console.log({ email: this.email, password: this.password, confirmPassword: this.confirmPassword});
+                // // Vuex
+
+                const formData = {
+                    email: this.email,
+                    password: this.password,
+                }
+                this.$store.dispatch('signUp', {email: formData.email, password: formData.password})
+
             }
         }
     }
+    // Your web app's Firebase configuration
+
 </script>
 
 <style scoped>

@@ -4,6 +4,13 @@ import Vuetify from 'vuetify'
 import VueRouter from 'vue-router'
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 import { routes } from "./routes";
+import firebase from 'firebase'
+import store from './store'
+/* eslint-disable */
+
+import firebaseConfig from './config/firebaseConfig'
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 Vue.config.productionTip = false
 Vue.use(Vuetify);
@@ -16,5 +23,6 @@ const router = new VueRouter({
 
 new Vue({
     render: h => h(App),
-   router,
+    router,
+    store
 }).$mount('#app')
